@@ -1,0 +1,173 @@
+.section3 {
+  background: url(../img/sand4.jpg) no-repeat center/cover;
+  min-height: calc(100vh);
+}
+
+.section3 p {
+  color: #000;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.section3__text {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px;
+}
+
+.section3__text span {
+  color: #ffff00;
+}
+
+.section3__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section3__grid .grid {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+}
+
+.section3__grid .grid figure {
+  position: relative;
+  float: left;
+  min-width: 100px;
+  max-width: 480px;
+  max-height: 360px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.section3__grid .grid figure img {
+  margin: auto;
+  position: relative;
+  display: block;
+  min-height: 95%;
+  max-width: 95%;
+}
+
+.section3__grid .grid figure figcaption {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.section3__grid .grid figure figcaption::before,
+.section3__grid .grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.section3__grid .grid figure figcaption,
+.section3__grid .grid figure figcaption > a {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 108%;
+}
+
+.section3__grid .grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.section3__grid figure.effect-bubba figcaption::before,
+.section3__grid figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+.section3__grid figure.effect-bubba figcaption::before {
+  border-top: 2px solid #ffff00;
+  border-bottom: 2px solid #ffff00;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.section3__grid figure.effect-bubba figcaption::after {
+  border-right: 2px solid #ffff00;
+  border-left: 2px solid #ffff00;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+.section3__grid figure.effect-bubba p {
+  padding: 20px 2.5em;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+.section3__grid figure.effect-bubba:hover figcaption::before,
+.section3__grid figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.section3__grid figure.effect-bubba:hover button,
+.section3__grid figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+a.btn {
+  display: inline-block;
+  padding: 0.5em 3em;
+  border: 0.16em solid #ffffff;
+  margin: 0 0.3em 0.3em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+a.btn:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
+
+a.btn:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+/*# sourceMappingURL=section3.css.map */

@@ -1,0 +1,222 @@
+.section2 {
+  background-color: #000;
+  height: calc(100vh);
+  min-height: 900px;
+  font-family: "Oswald", sans-serif;
+}
+
+.section2__text {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px;
+}
+
+.section2__text span {
+  color: #ffff00;
+}
+
+.section2__photo {
+  position: relative;
+  height: 600px;
+  width: 40%;
+  padding: 0 100px;
+  float: left;
+}
+
+.section2__photo .box {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-45%, -50%);
+  transform: translate(-45%, -50%);
+  width: 328px;
+  height: 328px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 6px;
+}
+
+.section2__photo .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.section2__photo .box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.section2__photo .box span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #ffff00;
+  -webkit-animation: animate 4s linear infinite;
+  animation: animate 4s linear infinite;
+}
+
+.section2__photo .box span:nth-child(1) {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.section2__photo .box span:nth-child(2) {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.section2__photo .box span:nth-child(3) {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.section2__photo .box span:nth-child(4) {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.section2__photo .box span:nth-child(2):before {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+.section2__photo .box span:nth-child(4):before {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+  50.1% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  }
+  50.1% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+  }
+}
+
+.section2__photo .content img {
+  width: 315px;
+}
+
+.section2__photo .info {
+  padding-top: 3%;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section2__skills {
+  width: 45%;
+  float: right;
+  position: relative;
+  height: 500px;
+}
+
+.section2__skills p {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.section2__skills .programmer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10%;
+}
+
+.section2__skills .graphic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2__skills .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section2__skills .skill img {
+  width: 50%;
+}
+/*# sourceMappingURL=section2.css.map */

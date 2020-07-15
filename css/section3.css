@@ -43,6 +43,13 @@
   text-align: center;
 }
 
+.section3__grid .grid .github-icon {
+  width: 25px;
+  height: 25px;
+  color: #ffff00;
+  margin-right: 15px;
+}
+
 .section3__grid .grid figure {
   position: relative;
   float: left;
@@ -108,6 +115,9 @@
   text-decoration: none;
   color: #ffff00;
   padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section3__grid figure.effect-bubba figcaption::before,
@@ -156,7 +166,14 @@
 }
 
 .section3__grid figure.effect-bubba p {
-  padding: 20px 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -173,7 +190,8 @@
   transform: scale(1);
 }
 
-.section3__grid figure.effect-bubba:hover p {
+.section3__grid figure.effect-bubba:hover p,
+.section3__grid figure.effect-bubba:hover .github-icon {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

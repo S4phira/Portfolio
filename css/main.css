@@ -85,7 +85,7 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding: 50px;
+  padding-top: 50px;
 }
 
 .section2__text span {
@@ -95,15 +95,15 @@
 .section2__photo {
   position: relative;
   height: 600px;
-  width: 40%;
-  padding: 0 100px;
+  width: 50%;
+  padding-left: 133px;
   float: left;
 }
 
 .section2__photo .box {
   position: absolute;
-  top: 65%;
-  left: 50%;
+  top: 42%;
+  left: 54%;
   -webkit-transform: translate(-45%, -50%);
   transform: translate(-45%, -50%);
   width: 328px;
@@ -235,7 +235,7 @@
 }
 
 .section2__photo .info {
-  padding-top: 3%;
+  padding-top: 60%;
   font-size: 1.5rem;
   color: #fff;
   font-weight: 500;
@@ -244,10 +244,11 @@
 }
 
 .section2__skills {
-  width: 45%;
+  width: 50%;
   float: right;
   position: relative;
   height: 500px;
+  padding-right: 133px;
 }
 
 .section2__skills p {
@@ -255,6 +256,7 @@
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
+  padding-top: 4%;
 }
 
 .section2__skills .programmer {
@@ -266,7 +268,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 10%;
+  padding-top: 6%;
 }
 
 .section2__skills .graphic {
@@ -339,6 +341,13 @@
   text-align: center;
 }
 
+.section3__grid .grid .github-icon {
+  width: 25px;
+  height: 25px;
+  color: #ffff00;
+  margin-right: 15px;
+}
+
 .section3__grid .grid figure {
   position: relative;
   float: left;
@@ -404,6 +413,9 @@
   text-decoration: none;
   color: #ffff00;
   padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .section3__grid figure.effect-bubba figcaption::before,
@@ -452,7 +464,14 @@
 }
 
 .section3__grid figure.effect-bubba p {
-  padding: 20px 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -469,10 +488,15 @@
   transform: scale(1);
 }
 
-.section3__grid figure.effect-bubba:hover p {
+.section3__grid figure.effect-bubba:hover p,
+.section3__grid figure.effect-bubba:hover .github-icon {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

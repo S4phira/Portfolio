@@ -11,7 +11,7 @@
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
-    padding: 50px;
+    padding-top: 50px;
     span {
       color: $primary-color;
     }
@@ -20,13 +20,13 @@
   &__photo {
     position: relative;
     height: 600px;
-    width: 40%;
-    padding: 0 100px;
+    width: 50%;
+    padding-left: 133px;
     float: left;
     .box {
       position: absolute;
-      top: 65%;
-      left: 50%;
+      top: 42%;
+      left: 54%;
       -webkit-transform: translate(-45%, -50%);
       transform: translate(-45%, -50%);
       width: 328px;
@@ -157,7 +157,7 @@
     }
 
     .info {
-      padding-top: 3%;
+      padding-top: 60%;
       font-size: 1.5rem;
       color: #fff;
       font-weight: 500;
@@ -167,21 +167,24 @@
   }
 
   &__skills {
-    width: 45%;
+    width: 50%;
     float: right;
     position: relative;
     height: 500px;
+    padding-right: 133px;
+
     p {
       color: #fff;
       text-align: center;
       font-size: 2rem;
       text-transform: uppercase;
+      padding-top: 4%;
     }
     .programmer {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding-bottom: 10%;
+      padding-top: 6%;
     }
     .graphic {
       display: flex;

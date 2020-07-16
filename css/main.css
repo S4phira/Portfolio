@@ -20,6 +20,16 @@
   line-height: 0.6;
 }
 
+@media screen and (max-width: 400px) {
+  .section1 .header__text {
+    font-size: 8vw;
+  }
+}
+
+.section1 .header__text span {
+  color: #ffff00;
+}
+
 .section1 .header__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +47,12 @@
   padding: 1rem 3rem;
   color: #f4f4f4;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 400px) {
+  .section1 .header__button a {
+    font-size: 1rem;
+  }
 }
 
 .section1 .header__button a:hover {
@@ -77,6 +93,19 @@
   height: calc(100vh);
   min-height: 900px;
   font-family: "Oswald", sans-serif;
+  margin-top: -1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section2 {
+    height: 150%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2 {
+    height: 1500px;
+  }
 }
 
 .section2__text {
@@ -86,6 +115,12 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 50px;
+}
+
+@media screen and (max-width: 400px) {
+  .section2__text {
+    font-size: 3rem;
+  }
 }
 
 .section2__text span {
@@ -100,6 +135,20 @@
   float: left;
 }
 
+@media screen and (max-width: 1024px) {
+  .section2__photo {
+    float: none;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section2__photo {
+    height: 500px;
+  }
+}
+
 .section2__photo .box {
   position: absolute;
   top: 42%;
@@ -112,6 +161,22 @@
   box-sizing: border-box;
   overflow: hidden;
   padding: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section2__photo .box {
+    top: 40%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2__photo .box {
+    top: 25%;
+    left: 45%;
+    width: 240px;
+    height: 240px;
+  }
 }
 
 .section2__photo .box:before {
@@ -231,7 +296,7 @@
 }
 
 .section2__photo .content img {
-  width: 315px;
+  width: 100%;
 }
 
 .section2__photo .info {
@@ -243,12 +308,51 @@
   text-align: center;
 }
 
+@media screen and (max-width: 1440px) {
+  .section2__photo .info {
+    padding-top: 80%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section2__photo .info {
+    padding-top: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section2__photo .info {
+    padding-top: 63%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section2__photo .info {
+    padding: 100% 30px 0 30px;
+    font-size: 1rem;
+  }
+}
+
 .section2__skills {
   width: 50%;
   float: right;
   position: relative;
   height: 500px;
   padding-right: 133px;
+}
+
+@media screen and (max-width: 1440px) {
+  .section2__skills {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section2__skills {
+    float: none;
+    padding-right: 0;
+    width: 100%;
+  }
 }
 
 .section2__skills p {
@@ -271,13 +375,13 @@
   padding-top: 6%;
 }
 
-.section2__skills .graphic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (max-width: 400px) {
+  .section2__skills .programmer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 .section2__skills .skill {
@@ -292,14 +396,31 @@
           align-items: center;
 }
 
+@media screen and (max-width: 1700px) {
+  .section2__skills .skill {
+    width: 32%;
+  }
+}
+
 .section2__skills .skill img {
   width: 50%;
 }
 
+.section2__skills .mongo {
+  width: 40%;
+}
+
 .section3 {
   background: url(../img/sand2.jpg) no-repeat center/cover;
-  height: calc(100vh);
   min-height: 900px;
+  height: 110%;
+  margin-top: -1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section3 {
+    height: 105%;
+  }
 }
 
 .section3 p {
@@ -318,6 +439,12 @@
   padding: 50px;
 }
 
+@media screen and (max-width: 400px) {
+  .section3__text {
+    font-size: 3rem;
+  }
+}
+
 .section3__text span {
   color: #ffff00;
 }
@@ -331,6 +458,13 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 1700px) {
+  .section3__grid {
+    padding: 0 10% 5% 10%;
+  }
 }
 
 .section3__grid .grid {
@@ -341,7 +475,7 @@
   text-align: center;
 }
 
-.section3__grid .grid .github-icon {
+.section3__grid .grid .icon {
   width: 25px;
   height: 25px;
   color: #ffff00;
@@ -401,6 +535,13 @@
   height: 108%;
 }
 
+@media screen and (max-width: 400px) {
+  .section3__grid .grid figure figcaption,
+  .section3__grid .grid figure figcaption > a {
+    width: 108%;
+  }
+}
+
 .section3__grid .grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -437,6 +578,12 @@
   background: #000000ca;
   width: 100%;
   height: 88%;
+}
+
+@media screen and (max-width: 400px) {
+  .section3__grid figure.effect-bubba {
+    width: 76%;
+  }
 }
 
 .section3__grid figure.effect-bubba img {
@@ -489,7 +636,7 @@
 }
 
 .section3__grid figure.effect-bubba:hover p,
-.section3__grid figure.effect-bubba:hover .github-icon {
+.section3__grid figure.effect-bubba:hover .icon {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -502,6 +649,7 @@ html {
 body {
   margin: 0;
   font-family: "Oswald", sans-serif;
+  position: relative;
 }
 
 *,
@@ -519,5 +667,73 @@ body {
 
 .clearfix:after {
   clear: both;
+}
+
+footer {
+  height: 55px;
+  bottom: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 3%;
+  height: 26%;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 1.5%;
+    background-color: #000;
+  }
+}
+
+.footer {
+  height: 3%;
+}
+
+.footer__icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1700px) {
+  .icons {
+    margin-left: 20px;
+  }
+}
+
+.icons a img {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .icons a img {
+    margin: auto 8px 0 0;
+  }
+}
+
+.icons a img:hover {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 15px #ffff00;
+          box-shadow: 0 0 15px #ffff00;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 /*# sourceMappingURL=main.css.map */

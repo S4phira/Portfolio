@@ -9,6 +9,7 @@ html {
 body {
   margin: 0;
   font-family: "Oswald", sans-serif;
+  position: relative;
 }
 *,
 *:after,
@@ -23,4 +24,55 @@ body {
 }
 .clearfix:after {
   clear: both;
+}
+footer {
+  height: 55px;
+  bottom: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 3%;
+  height: 26%;
+  @media screen and (max-width: $medium) {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 1.5%;
+    background-color: $background-color;
+  }
+}
+.footer {
+  height: 3%;
+  &__icon {
+    width: 40px;
+    height: 40px;
+    @media screen and (max-width: $medium) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  @media screen and (max-width: $xxlarge) {
+    margin-left: 20px;
+  }
+  a img {
+    margin-bottom: 10px;
+    @media screen and (max-width: $medium) {
+      margin: auto 8px 0 0;
+    }
+  }
+}
+
+.icons a img:hover {
+  border-radius: 50%;
+  box-shadow: 0 0 15px $primary-color;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }

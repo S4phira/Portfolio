@@ -1,7 +1,14 @@
 .section3 {
   background: url(../img/sand2.jpg) no-repeat center/cover;
-  height: calc(100vh);
   min-height: 900px;
+  height: 110%;
+  margin-top: -1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .section3 {
+    height: 105%;
+  }
 }
 
 .section3 p {
@@ -20,6 +27,12 @@
   padding: 50px;
 }
 
+@media screen and (max-width: 400px) {
+  .section3__text {
+    font-size: 3rem;
+  }
+}
+
 .section3__text span {
   color: #ffff00;
 }
@@ -33,6 +46,13 @@
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 1700px) {
+  .section3__grid {
+    padding: 0 10% 5% 10%;
+  }
 }
 
 .section3__grid .grid {
@@ -43,7 +63,7 @@
   text-align: center;
 }
 
-.section3__grid .grid .github-icon {
+.section3__grid .grid .icon {
   width: 25px;
   height: 25px;
   color: #ffff00;
@@ -103,6 +123,13 @@
   height: 108%;
 }
 
+@media screen and (max-width: 400px) {
+  .section3__grid .grid figure figcaption,
+  .section3__grid .grid figure figcaption > a {
+    width: 108%;
+  }
+}
+
 .section3__grid .grid figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
@@ -139,6 +166,12 @@
   background: #000000ca;
   width: 100%;
   height: 88%;
+}
+
+@media screen and (max-width: 400px) {
+  .section3__grid figure.effect-bubba {
+    width: 76%;
+  }
 }
 
 .section3__grid figure.effect-bubba img {
@@ -191,7 +224,7 @@
 }
 
 .section3__grid figure.effect-bubba:hover p,
-.section3__grid figure.effect-bubba:hover .github-icon {
+.section3__grid figure.effect-bubba:hover .icon {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);

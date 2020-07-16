@@ -4,6 +4,13 @@
   height: calc(100vh);
   min-height: 900px;
   font-family: "Oswald", sans-serif;
+  margin-top: -1px;
+  @media screen and (max-width: $large) {
+    height: 150%;
+  }
+  @media screen and (max-width: $medium) {
+    height: 1500px;
+  }
 
   &__text {
     font-size: 4rem;
@@ -12,6 +19,9 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 50px;
+    @media screen and (max-width: $small) {
+      font-size: 3rem;
+    }
     span {
       color: $primary-color;
     }
@@ -23,6 +33,15 @@
     width: 50%;
     padding-left: 133px;
     float: left;
+
+    @media screen and (max-width: $large) {
+      float: none;
+      padding-left: 0;
+      width: 100%;
+    }
+    @media screen and (max-width: $small) {
+      height: 500px;
+    }
     .box {
       position: absolute;
       top: 42%;
@@ -35,6 +54,17 @@
       box-sizing: border-box;
       overflow: hidden;
       padding: 6px;
+
+      @media screen and (max-width: $large) {
+        top: 40%;
+        left: 50%;
+      }
+      @media screen and (max-width: $medium) {
+        top: 25%;
+        left: 45%;
+        width: 240px;
+        height: 240px;
+      }
     }
 
     .box:before {
@@ -153,7 +183,7 @@
       }
     }
     .content img {
-      width: 315px;
+      width: 100%;
     }
 
     .info {
@@ -163,6 +193,21 @@
       font-weight: 500;
       text-transform: uppercase;
       text-align: center;
+      @media screen and (max-width: $xlarge) {
+        padding-top: 80%;
+      }
+      @media screen and (max-width: $large) {
+        padding-top: 45%;
+      }
+
+      @media screen and (max-width: $medium) {
+        padding-top: 63%;
+      }
+
+      @media screen and (max-width: $small) {
+        padding: 100% 30px 0 30px;
+        font-size: 1rem;
+      }
     }
   }
 
@@ -172,6 +217,14 @@
     position: relative;
     height: 500px;
     padding-right: 133px;
+    @media screen and (max-width: $xlarge) {
+      padding-right: 0;
+    }
+    @media screen and (max-width: $large) {
+      float: none;
+      padding-right: 0;
+      width: 100%;
+    }
 
     p {
       color: #fff;
@@ -185,18 +238,24 @@
       flex-wrap: wrap;
       justify-content: center;
       padding-top: 6%;
-    }
-    .graphic {
-      display: flex;
-      justify-content: center;
+      @media screen and (max-width: $small) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
     }
     .skill {
       display: flex;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: $xxlarge) {
+        width: 32%;
+      }
       img {
         width: 50%;
       }
+    }
+    .mongo {
+      width: 40%;
     }
   }
 }

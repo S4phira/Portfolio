@@ -20,6 +20,16 @@
   line-height: 0.6;
 }
 
+@media screen and (max-width: 400px) {
+  .section1 .header__text {
+    font-size: 8vw;
+  }
+}
+
+.section1 .header__text span {
+  color: #ffff00;
+}
+
 .section1 .header__button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +47,12 @@
   padding: 1rem 3rem;
   color: #f4f4f4;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 400px) {
+  .section1 .header__button a {
+    font-size: 1rem;
+  }
 }
 
 .section1 .header__button a:hover {

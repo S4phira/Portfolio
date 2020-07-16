@@ -13,16 +13,16 @@
 }
 
 .section1 .header__text {
-  font-size: 6rem;
+  font-size: 7rem;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 0.6;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1024px) {
   .section1 .header__text {
-    font-size: 8vw;
+    font-size: 10vw;
   }
 }
 
@@ -52,6 +52,7 @@
 @media screen and (max-width: 400px) {
   .section1 .header__button a {
     font-size: 1rem;
+    padding: 1rem 1rem;
   }
 }
 

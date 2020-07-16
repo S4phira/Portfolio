@@ -2,7 +2,7 @@
   background: url(../img/sand2.jpg) no-repeat center/cover;
   min-height: 900px;
   height: 110%;
-  margin-top: -1px;
+  margin-top: -5px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -145,6 +145,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  pointer-events: auto;
 }
 
 .section3__grid figure.effect-bubba figcaption::before,
@@ -164,14 +165,7 @@
 
 .section3__grid figure.effect-bubba {
   background: #000000ca;
-  width: 100%;
   height: 88%;
-}
-
-@media screen and (max-width: 400px) {
-  .section3__grid figure.effect-bubba {
-    width: 76%;
-  }
 }
 
 .section3__grid figure.effect-bubba img {
@@ -228,5 +222,6 @@
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  pointer-events: none;
 }
 /*# sourceMappingURL=section3.css.map */

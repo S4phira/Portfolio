@@ -3,18 +3,12 @@
   height: calc(100vh);
   min-height: 900px;
   font-family: "Oswald", sans-serif;
-  margin-top: -1px;
+  margin-top: -5px;
 }
 
 @media screen and (max-width: 1024px) {
   .section2 {
-    height: 150%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .section2 {
-    height: 1500px;
+    height: 100%;
   }
 }
 
@@ -62,7 +56,7 @@
 .section2__photo .box {
   position: absolute;
   top: 42%;
-  left: 54%;
+  left: 50%;
   -webkit-transform: translate(-45%, -50%);
   transform: translate(-45%, -50%);
   width: 328px;
@@ -76,14 +70,13 @@
 @media screen and (max-width: 1024px) {
   .section2__photo .box {
     top: 40%;
-    left: 50%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .section2__photo .box {
-    top: 25%;
-    left: 45%;
+    top: 30%;
+    left: 48%;
     width: 240px;
     height: 240px;
   }
@@ -226,13 +219,19 @@
 
 @media screen and (max-width: 1024px) {
   .section2__photo .info {
-    padding-top: 45%;
+    padding: 45% 10% 0 10%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .section2__photo .info {
-    padding-top: 63%;
+    padding-top: 55%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .section2__photo .info {
+    padding-top: 75%;
   }
 }
 
@@ -262,6 +261,7 @@
     float: none;
     padding-right: 0;
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -271,6 +271,12 @@
   font-size: 2rem;
   text-transform: uppercase;
   padding-top: 4%;
+}
+
+@media screen and (max-width: 1440px) {
+  .section2__skills p {
+    padding: 0 5%;
+  }
 }
 
 .section2__skills .programmer {
@@ -312,11 +318,23 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .section2__skills .skill {
+    width: 100%;
+  }
+}
+
 .section2__skills .skill img {
   width: 50%;
 }
 
 .section2__skills .mongo {
   width: 40%;
+}
+
+@media screen and (max-width: 400px) {
+  .section2__skills .mongo {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=section2.css.map */

@@ -495,7 +495,7 @@
 }
 
 .section3__grid .grid .icon {
-  width: 25px;
+  width: 45px;
   height: 25px;
   color: #ffff00;
   margin-right: 15px;
@@ -577,6 +577,10 @@
   display: -ms-flexbox;
   display: flex;
   pointer-events: auto;
+}
+
+.section3__grid .grid figure figcaption p {
+  color: #ffff00;
 }
 
 .section3__grid figure.effect-bubba figcaption::before,

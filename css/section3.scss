@@ -43,7 +43,6 @@
       list-style: none;
       text-align: center;
       .icon {
-        width: 25px;
         height: 25px;
         color: #ffff00;
         margin-right: 15px;
@@ -113,6 +112,9 @@
       padding: 0 50px;
       display: flex;
       pointer-events: auto;
+    }
+    .grid figure figcaption p {
+      color: #ffff00;
     }
 
     figure.effect-bubba figcaption::before,

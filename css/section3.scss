@@ -37,7 +37,9 @@
     @media screen and (max-width: $xxlarge) {
       padding: 0 10% 5% 10%;
     }
-
+    @media screen and (max-width: $xxlarge) {
+      padding-bottom: 60px;
+    }
     .grid {
       position: relative;
       margin: 0 auto;
@@ -51,6 +53,35 @@
         margin-right: 9px;
         padding-top: 6px;
         padding-bottom: 6px;
+        @media screen and (max-width: $medium) {
+          width: 15px;
+          height: 27px;
+        }
+      }
+      .description {
+        background-color: rgba(0, 0, 0, 0.582);
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        width: 87%;
+        height: 40px;
+        @media screen and (max-width: $medium) {
+          top: 89%;
+          height: 20px;
+        }
+        p {
+          color: wheat;
+          font-size: 30px;
+          font-family: "Baloo Tamma 2", cursive;
+          text-transform: none;
+          margin: 0;
+          @media screen and (max-width: $medium) {
+            font-size: 11px;
+          }
+        }
       }
     }
 
@@ -117,6 +148,9 @@
       padding: 0 50px;
       display: flex;
       pointer-events: auto;
+      @media screen and (max-width: $medium) {
+        font-size: 15px;
+      }
     }
     .grid figure figcaption p {
       color: #ffff00;

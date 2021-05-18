@@ -521,7 +521,6 @@
 }
 
 .section3__grid .grid .description {
-  background-color: rgba(0, 0, 0, 0.582);
   position: absolute;
   top: 87%;
   left: 50%;
@@ -542,7 +541,7 @@
 
 .section3__grid .grid .description p {
   color: wheat;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Baloo Tamma 2", cursive;
   text-transform: none;
   margin: 0;
@@ -630,6 +629,10 @@
   display: -ms-flexbox;
   display: flex;
   pointer-events: auto;
+}
+
+.section3__grid .grid figure figcaption a span {
+  color: #9ba057;
 }
 
 @media screen and (max-width: 768px) {
